@@ -11,9 +11,9 @@ SimpleCov.start do
   add_group 'Controllers', 'controllers'
   add_group 'Extensions', 'extensions'
   add_group 'Workers', 'workers'
-  add_group 'Config', 'config'
 
   add_filter '/spec/'
+  add_filter '/config/'
   add_filter 'app.rb'
 end
 
