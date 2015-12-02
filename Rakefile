@@ -12,7 +12,7 @@ begin
   desc 'Run cane to check quality metrics'
   Cane::RakeTask.new(:quality) do |cane|
     cane.abc_max = 10
-    cane.add_threshold 'coverage/.last_run.json', :>=, 95
+    cane.add_threshold 'coverage/.last_run.json', :>=, 93
     cane.style_exclude = %w(spec/**/*.rb)
   end
 
